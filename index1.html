@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            OverCaffeinated
+        </title>
+        <link rel = "stylesheet" href = "style1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class = "header">
+
+            <div class = "first-part">
+                <div class = "logo">
+                    <img src = "pic-10.png" alt = "logo">
+                </div>
+            </div>
+
+            <div class = "middle-part">
+                <div class = "cafe-name">OverCaffeinated</div>
+                <div class = "cafe-slogan" style = "font-size: 20px;">True Definition of Quality</div>
+            </div>
+
+            
+	    </div>
+
+        <div class = "homepage">
+
+            <div class = "slideshow">
+
+
+                    <div class = "images">
+                        <img src = "pic-1.jpg" alt = "pic">
+                    </div>
+
+                    <div class = "images">
+                        <img src = "pic-2.jpg" alt = "pic">
+                    </div>  
+                    
+                    <div class = "images">
+                        <img src = "pic-8.jpg" alt = "pic">
+                    </div>
+
+
+            </div>
+
+            <div class = "story-section">
+
+                <div class = "story-details">
+
+                    <div class="story-title">
+                        <p>Our Story</p>
+                    </div>
+
+                    <div class = "story">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non aliquam ipsum, facilisis molestie ante. 
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque in tellus placerat lacus malesuada 
+                        interdum sit amet ut leo. Aliquam nec arcu consequat, placerat augue vitae, elementum turpis. Quisque faucibus
+                        nisi ex, eget venenatis sem pretium in. </p>
+                    </div>
+
+                </div>
+
+                <div class = "photo">
+                    <img class = "coffee-photo" src="pic-14.jpg" alt = "pic">
+                </div>
+
+
+            </div>
+
+            <div class = "main-section-draft">
+
+                    <div class = "left-section-draft-1">
+                        <img src = "pic-15.jpg" alt = "pic">
+                    </div>
+
+                    <div class = "right-section-draft-1">
+                        <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non aliquam ipsum, 
+                        facilisis molestie ante. Interdum et malesuada fames ac ante ipsum primis in 
+                        faucibus. Quisque in tellus placerat lacus malesuada interdum sit amet ut leo.
+                        </div>
+                        <div>
+                            <button 
+                            class = "button"
+                            style="top: 80%; left: 55%; transform: translate(-55%, -80%);"
+                            onClick = "window.open('https://drive.google.com/file/d/1Ak3xrFU9gwnXOw2TWKdIWGlwpu1RNqGS/view?usp=drive_link', '_blank')"
+                            >View Menu</button>
+                        </div>
+                    </div>
+
+            </div>
+
+             <div class = "main-section-draft">
+
+                    <div class = "left-section-draft-2">
+                        <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non aliquam ipsum, 
+                        facilisis molestie ante. Interdum et malesuada fames ac ante ipsum primis in 
+                        faucibus. Quisque in tellus placerat lacus malesuada interdum sit amet ut leo.
+                        </div>
+                        <div>
+                            <button 
+                            class = "button" 
+                            style="top: 80%; left: 40%; transform: translate(-40%, -80%);"
+                            onClick = "redirectToCollectionPage()"
+                            >View Collection</button>
+                        </div>
+                    </div>
+
+                    <div class = "right-section-draft-2">
+                        <img src = "pic-6.jpg" alt = "pic">
+                    </div>
+
+            </div>
+
+        </div>
+
+        <div class = "footer">
+            <div class = "info">
+                <p>Branches</p>
+                <p>101 Table Street, Blue</p>
+                <p>103 Mango Street, Car</p>
+                <p>Follow us on <a href="#" class="fa fa-instagram"></a></p>
+            </div>
+        </div>
+
+        <script src = "script.js"></script>
+        <script>
+            function checkOrientation() {
+                if (window.innerWidth < 450) {
+                    window.location.href = "index2.html";
+                }
+            }
+
+            window.addEventListener("resize", checkOrientation);
+            window.addEventListener("orientationchange", checkOrientation);
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,86 @@
+.header {
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 60px;
+	color: brown;
+	border: none;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+body, html {
+	margin-top: 40px;
+	padding: 0;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.item {
+	position: relative;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-family: Chewy;
+	color: brown;
+	flex: 1;
+}
+
+.price {
+	font-family: Chewy;
+	color: brown;
+	flex: 1;
+	display: flex;
+	justify-content: end;
+}
+
+.js-grid {
+	display: grid;
+	margin-top: 30px; 
+	column-gap: 20px;
+	row-gap: 40px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.image {
+	height: 250px;
+}
+
+.image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.product-details {
+	display: flex;
+}
+
+@media (max-width: 450px) {
+	.js-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 749px) {
+	.js-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+	.js-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 1025px) {
+	.js-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
