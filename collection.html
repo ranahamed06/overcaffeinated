@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<title>Collection</title>
+    <meta name="description" content="Browse our handpicked collection of coffee products and blends.">
+	<title>OverCaffeinated | Collection</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel = "stylesheet" href = "categories.css">
 </head>
@@ -14,27 +15,8 @@
 
     <div class = "js-grid"></div>
 
-    <script src = "products.js"></script>
+    <script src = "products.js" defer></script>
 
-    <script>
-
-        let productsHTML = '';
-
-        products.forEach((product) => {
-            productsHTML += `
-                <div class = "item">
-                    <div class = "image">
-                        <img src = "${product.image}" alt = "pic">
-                    </div>
-                    <div class = "product-details">
-                        <div class = "title">${product.name}</div>
-                        <div class = "price">${product.price}</div>    
-                    </div>
-                </div>
-            `;
-        });
-
-        document.querySelector('.js-grid').innerHTML = productsHTML;
-    </script>
+    <script src = "render.js" defer></script>
 </body>
 </html>

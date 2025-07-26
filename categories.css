@@ -27,13 +27,11 @@ body, html {
 }
 
 .title {
-	font-family: Chewy;
 	color: brown;
 	flex: 1;
 }
 
 .price {
-	font-family: Chewy;
 	color: brown;
 	flex: 1;
 	display: flex;

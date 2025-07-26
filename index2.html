@@ -2,6 +2,7 @@
 <html lang ="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Browse our handpicked collection of coffee products and blends.">
         <title>
             OverCaffeinated
         </title>
@@ -137,27 +138,7 @@
         </div>
 
         <script src = "script.js"></script>
-        <script>
-
-            function checkOrientation() {
-                const warning = document.getElementById("orientation-warning");
-                const content = document.getElementById("main-content");
-
-                if (window.innerWidth > window.innerHeight) {
-                    // Landscape
-                    warning.style.display = "block";
-                    content.style.display = "none";
-                } else {
-                    // Portrait
-                    warning.style.display = "none";
-                    content.style.display = "block";
-                }
-            }
-
-            window.addEventListener("resize", checkOrientation);
-            window.addEventListener("orientationchange", checkOrientation);
-            
-        </script>
+        <script src = "orientation.js"></script>
 
     </body>
 </html>
