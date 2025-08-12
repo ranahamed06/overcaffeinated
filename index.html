@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Browse our handpicked collection of coffee products and blends.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class = "main-page">
+    <p id = "animated-cafe-name"></p>
+  </div>
+
+  <script>
+
+    const title = document.getElementById("animated-cafe-name");
+    const letters = ['O','v','e','r','C','a','f','f','e','i','n','a','t','e','d'];
+    letters.forEach((char, index) => {
+        let newLetter = document.createElement('span');
+        newLetter.textContent = char;
+        newLetter.style.animationDelay = `${index * 0.15}s`;
+        title.appendChild(newLetter);
+    });
+
+    const delayPerLetter = 150;
+    const totalDelay = letters.length * delayPerLetter + 1000;
+
+    window.onload = function () {
+        setTimeout(() => {
+            window.location.href = "index3.html";
+        }, totalDelay);
+    };
+
+
+  </script>
+  
+
+</body>
+</html>

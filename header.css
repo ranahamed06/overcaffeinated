@@ -1,0 +1,91 @@
+.header {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: env(safe-area-inset-top);
+}
+
+.first-part {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.middle-part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: rgb(61, 10, 10);
+  height: 100px;
+  width: 100%;
+  max-width: 475px;
+  padding: 0 15px;
+}
+
+.cafe-name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cafe-name p {
+  margin: 0;
+}
+
+.cafe-slogan {
+  font-size: 20px;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    position: relative;
+  }
+
+  body {
+    margin: 0;
+  }
+    
+  .slideshow {
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  picture img {
+    object-fit: cover; 
+  }
+}
+
+@media (max-width: 749px) {
+  .cafe-name {
+    font-size: 25px;
+  }
+}

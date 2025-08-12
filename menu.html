@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Browse our handpicked collection of coffee products and blends.">
+	<title>Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+	<link rel = "stylesheet" href = "styles/categories.css">
+    <link rel = "stylesheet" href = "styles/header.css">
+    <link rel="stylesheet" href="styles/style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+</head>
+<body>
+
+	<div class="header">
+        <div class="first-part">
+            <div class="logo">
+                <img src="pictures/pic-10.png" alt="logo" />
+            </div>
+        </div>
+        <div class="middle-part">
+            <div class="cafe-name">OverCaffeinated</div>
+            <div class="cafe-slogan">True Definition of Quality</div>
+        </div>
+    </div>
+
+    <div class = "js-grid"></div>
+
+    <div class="footer">
+        <div class="info">
+            <p style = "font-weight: bold;">Branches</p>
+            <p class = "branches">101 Table Street, Blue</p>
+            <p class = "branches">103 Mango Street, Car</p>
+            <p style = "font-weight: bold;">Follow us on</p>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div>
+
+    <script src = "products.js"></script>
+
+    <script>
+
+        let productsHTML = '';
+
+        products.forEach((product) => {
+            productsHTML += `
+                <div class = "item">
+                    <div class = "image">
+                        <img src = "pictures/${product.image}" alt="${product.name}" loading="lazy">
+                    </div>
+                    <div class = "product-details">
+                        <div class = "title">${product.name}</div>
+                        <div class = "price">${product.price}</div>    
+                    </div>
+                    <div class = "view-button">
+                        <a href="details.html?id=${product.id}" class="view-link">View</a>    
+                    </div>
+                </div>
+            `;
+        });
+
+        document.querySelector('.js-grid').innerHTML = productsHTML;
+    </script>
+</body>
+</html>

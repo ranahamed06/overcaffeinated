@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Browse our handpicked collection of coffee products and blends." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OverCaffeinated</title>
+
+    <link rel="stylesheet" href="styles/style3.css" />
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <div class="first-part">
+            <div class="logo">
+                <img src="pictures/pic-10.png" alt="logo" />
+            </div>
+        </div>
+        <div class="middle-part">
+            <div class="cafe-name">OverCaffeinated</div>
+            <div class="cafe-slogan">True Definition of Quality</div>
+        </div>
+    </div>
+
+    <div class="homepage">
+
+        <!-- Responsive Slideshow -->
+        <div class="slideshow">
+            <picture>
+                <source media="(max-width: 768px)" srcset="pictures/pic-11.jpg" />
+                <img src="pictures/pic-1.jpg" alt="Slideshow image" />
+            </picture>
+            <picture>
+                <source media="(max-width: 768px)" srcset="pictures/pic-12.jpg" />
+                <img src="pictures/pic-2.jpg" alt="Slideshow image" />
+            </picture>
+            <picture>
+                <source media="(max-width: 768px)" srcset="pictures/pic-13.jpg" />
+                <img src="pictures/pic-8.jpg" alt="Slideshow image" />
+            </picture>
+        </div>
+
+        <!-- Our Story Section -->
+         
+        <div class="story-section">
+            <div class="story-details">
+                <div class="story-title"><p>Our Story</p></div>
+                <div class="story">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non aliquam ipsum, facilisis molestie ante. 
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque in tellus placerat lacus malesuada 
+                        interdum sit amet ut leo. Aliquam nec arcu consequat, placerat augue vitae, elementum turpis. Quisque faucibus
+                        nisi ex, eget venenatis sem pretium in. </p>
+                </div>
+            </div>
+            <div class="photo">
+                <img class="coffee-photo" src="pictures/pic-14.jpg" alt="Coffee" />
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="main-section-draft">
+            <div class="left-section-draft-1">
+                <img src="pictures/pic-15.jpg" alt="Pic" />
+            </div>
+            <div class="right-section-draft-1">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non aliquam ipsum, 
+                    facilisis molestie ante. Interdum et malesuada fames ac ante ipsum primis in 
+                    faucibus. Quisque in tellus placerat lacus malesuada interdum sit amet ut leo.</div>
+                <div>
+                    <button 
+                        class = "button button-1"
+                            onClick = "redirectToMenuPage()"
+                            >
+                        View Menu
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+
+        <div class="main-section-draft section-2">
+            <div class="left-section-draft-2">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non aliquam ipsum, 
+                    facilisis molestie ante. Interdum et malesuada fames ac ante ipsum primis in 
+                    faucibus. Quisque in tellus placerat lacus malesuada interdum sit amet ut leo.
+                </div>
+                <div>
+                    <button 
+                        class = "button button-2"
+                        onClick = "redirectToCollectionPage()"
+                            >
+                        View Collection
+                    </button>
+                </div>
+            </div>
+            <div class="right-section-draft-2">
+                <img src="pictures/pic-6.jpg" alt="Pic" />
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="info">
+            <p style = "font-weight: bold;">Branches</p>
+            <p class = "branches">101 Table Street, Blue</p>
+            <p class = "branches">103 Mango Street, Car</p>
+            <p style = "font-weight: bold;">Follow us on</p>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="orientation.js"></script> <!-- Optional if you want to use it -->
+</body>
+</html>
