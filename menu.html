@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
     0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
     rel="stylesheet">
-	<link rel = "stylesheet" href = "styles/categories.css">
-    <link rel = "stylesheet" href = "styles/header.css">
-    <link rel="stylesheet" href="styles/style3.css">
+	<link rel = "stylesheet" href = "categories.css">
+    <link rel = "stylesheet" href = "header.css">
+    <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     
 </head>
@@ -19,7 +19,7 @@
 	<div class="header">
         <div class="first-part">
             <div class="logo">
-                <img src="pictures/pic-10.png" alt="logo" />
+                <img src="pic-10.png" alt="logo" />
             </div>
         </div>
         <div class="middle-part">
@@ -50,7 +50,7 @@
             productsHTML += `
                 <div class = "item">
                     <div class = "image">
-                        <img src = "pictures/${product.image}" alt="${product.name}" loading="lazy">
+                        <img src = "${product.image}" alt="${product.name}" loading="lazy">
                     </div>
                     <div class = "product-details">
                         <div class = "title">${product.name}</div>
@@ -67,3 +67,4 @@
     </script>
 </body>
 </html>
+
