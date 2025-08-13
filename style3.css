@@ -222,8 +222,8 @@ picture img {
   }
 
   .logo {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
   }
 
   .middle-part {
@@ -232,11 +232,11 @@ picture img {
   }
 
   .cafe-name {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .cafe-slogan {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .slideshow {
