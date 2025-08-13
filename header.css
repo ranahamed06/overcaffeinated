@@ -86,6 +86,20 @@
 
 @media (max-width: 749px) {
   .cafe-name {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .cafe-slogan {
+    font-size: 15px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    background-color: transparent;
   }
 }
