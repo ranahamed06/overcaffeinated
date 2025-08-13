@@ -255,6 +255,7 @@ picture img {
   padding: 30px 20px;
   margin: 20px;
   height: auto; /* Let it grow naturally */
+  text-align: center;
 }
 
   
@@ -282,6 +283,7 @@ picture img {
   font-size: 14px;
   margin: 0;
   padding: 0 10px;
+  text-align: center;
 }
 
 
