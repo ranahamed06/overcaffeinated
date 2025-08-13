@@ -246,15 +246,17 @@ picture img {
   .picture {
     max-width: 400px;
   }
-
+  
   .story-section {
-    padding-top: 30px;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    background-color: wheat;
-    height: 500px;
-  }
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: wheat;
+  height: auto; /* allow it to grow as needed */
+  padding-bottom: 30px; /* extra space to avoid overlap */
+}
+
 
   .story-details {
     width: 100%;
