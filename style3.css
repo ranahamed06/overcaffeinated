@@ -209,7 +209,7 @@ picture img {
 }
 
 /* ========== RESPONSIVE (MOBILE) ========== */
-@media (max-width: 749px) {
+@media (max-width: 500px) {
   body {
     /*margin: 0 20px;*/
     margin: 0;
@@ -357,6 +357,7 @@ picture img {
     margin: 0;
   }
 }
+
 
 
 
